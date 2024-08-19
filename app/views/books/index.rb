@@ -6,8 +6,8 @@ module MyHanamiApp
       class Index < MyHanamiApp::View
         include Deps["repos.book_repo"]
 
-        expose :books do
-          book_repo.all_by_title
+        expose :books do |page:, per_page:|
+          book_repo.all_by_title(page:, per_page:)
         end
       end
     end
