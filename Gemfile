@@ -18,6 +18,12 @@ gem "sqlite3"
 
 group :development do
   gem "hanami-webconsole", "~> 2.2"
+
+  # Rubocop
+  gem "rubocop"
+  gem "rubocop-capybara"
+  gem "rubocop-rake"
+  gem "rubocop-rspec"
 end
 
 group :development, :test do
