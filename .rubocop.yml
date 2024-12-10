@@ -25,9 +25,6 @@ Style/StringLiterals:
 Bundler/OrderedGems:
   Enabled: false
 
-RSpec/ExampleWording:
-  DisallowedExamples: []
-
 RSpec/MultipleExpectations:
   Enabled: false
 
