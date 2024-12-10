@@ -14,6 +14,10 @@ module MyHanamiApp
       def get(id)
         books.by_pk(id).one!
       end
+
+      def create(attributes)
+        books.changeset(:create, attributes).commit
+      end
     end
   end
 end
