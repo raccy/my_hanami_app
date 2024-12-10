@@ -7,16 +7,20 @@ AllCops:
   TargetRubyVersion: 3.3
   NewCops: enable
 
-Bundler/OrderedGems:
+Style/Documentation:
   Enabled: false
 
-Style/Documentation:
-  Exclude:
-    - 'spec/**/*'
-    - 'test/**/*'
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
+Style/Lambda:
+  EnforcedStyle: literal
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
 
-Style/Lambda:
-  EnforcedStyle: literal
+Bundler/OrderedGems:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
