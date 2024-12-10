@@ -7,5 +7,8 @@ module MyHanamiApp
     get "/books/:id", to: "books.show", as: :show_book
     get "/books/new", to: "books.new"
     post "/books", to: "books.create", as: :create_book
+
+    slice :api, at: "/api" do
+    end
   end
 end
