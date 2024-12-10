@@ -1,8 +1,8 @@
-/.env*.local
-/log/*
-/public/
-/node_modules/
-/spec/examples.txt
-/db/*.sqlite
-/.bundle
-/vendor/
+.env*.local
+log/*
+public/
+node_modules/
+spec/examples.txt
+db/*.sqlite
+.bundle/
+vendor/
