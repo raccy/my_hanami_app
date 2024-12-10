@@ -7,6 +7,9 @@ AllCops:
   TargetRubyVersion: 3.3
   NewCops: enable
 
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+
 Style/Documentation:
   Enabled: false
 
@@ -22,5 +25,16 @@ Style/StringLiterals:
 Bundler/OrderedGems:
   Enabled: false
 
+RSpec/ExampleWording:
+  DisallowedExamples: []
+
 RSpec/MultipleExpectations:
   Enabled: false
+
+RSpec/NamedSubject:
+  Enabled: false
+
+RSpec/SpecFilePathFormat:
+  IgnoreMethods: true
+  CustomTransform:
+    MyHanamiApp: .
