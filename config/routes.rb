@@ -2,6 +2,6 @@
 
 module MyHanamiApp
   class Routes < Hanami::Routes
-    root to: "home.show"
+    root to: "home.index"
   end
 end

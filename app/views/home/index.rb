@@ -3,7 +3,7 @@
 module MyHanamiApp
   module Views
     module Home
-      class Show < MyHanamiApp::View
+      class Index < MyHanamiApp::View
       end
     end
   end

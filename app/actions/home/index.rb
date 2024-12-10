@@ -3,7 +3,7 @@
 module MyHanamiApp
   module Actions
     module Home
-      class Show < MyHanamiApp::Action
+      class Index < MyHanamiApp::Action
         def handle(request, response)
         end
       end
