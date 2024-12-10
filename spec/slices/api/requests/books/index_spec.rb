@@ -1,4 +1,11 @@
-RSpec.describe "GET /books", type: :request do
+RSpec.describe "GET /api/books", type: [:request, :db] do
+  let(:books) { Hanami.app["relations.books"] }
+
+  before do
+    books.insert(title: "Practical Object-Oriented Design in Ruby", author: "Sandi Metz")
+    books.insert(title: "Test Driven Development", author: "Kent Beck")
+  end
+
   it "returns a list of books" do
     get "/api/books"
 
@@ -8,8 +15,8 @@ RSpec.describe "GET /books", type: :request do
     response_body = JSON.parse(last_response.body)
 
     expect(response_body).to eq [
-      {"title" => "Test Driven Development"},
-      {"title" => "Practical Object-Oriented Design in Ruby"}
+      {"title" => "Practical Object-Oriented Design in Ruby", "author" => "Sandi Metz"},
+      {"title" => "Test Driven Development", "author" => "Kent Beck"}
     ]
   end
 end

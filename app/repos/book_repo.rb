@@ -5,6 +5,7 @@ module MyHanamiApp
     class BookRepo < MyHanamiApp::DB::Repo
       def all_by_title(page:, per_page:)
         books
+          .select(:title, :author)
           .order(books[:title].asc)
           .page(page)
           .per_page(per_page)
