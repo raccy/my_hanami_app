@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # spec/features/books/show_spec.rb
 
 RSpec.feature "Showing a book" do

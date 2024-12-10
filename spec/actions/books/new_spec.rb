@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 RSpec.describe MyHanamiApp::Actions::Books::New do
-  let(:params) { Hash[] }
+  let(:params) { {} }
 
   it "works" do
     response = subject.call(params)

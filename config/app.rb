@@ -7,7 +7,7 @@ module MyHanamiApp
     config.actions.sessions = :cookie, {
       key: "bookshelf.session",
       secret: settings.session_secret,
-      expire_after: 60*60*24*365
+      expire_after: 60 * 60 * 24 * 365
     }
   end
 end
