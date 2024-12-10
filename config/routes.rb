@@ -9,6 +9,7 @@ module MyHanamiApp
     post "/books", to: "books.create", as: :create_book
 
     slice :api, at: "/api" do
+      root to: "home.index"
     end
   end
 end
