@@ -2,7 +2,7 @@
 
 require "rack/test"
 
-RSpec.shared_context "Rack::Test" do
+RSpec.shared_context "Rack::Test" do # rubocop: disable Rake/ContextWording
   # Define the app for Rack::Test requests
   let(:app) { Hanami.app }
 end

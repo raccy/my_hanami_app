@@ -5,7 +5,7 @@ require "dry/types"
 module MyHanamiApp
   Types = Dry.Types
 
-  module Types
+  module Types # rubocop: disable Style/Documentation
     # Define your custom types here
   end
 end

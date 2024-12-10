@@ -3,7 +3,7 @@
 
 module MyHanamiApp
   module Views
-    module Helpers
+    module Helpers # rubocop: disable Style/Documentation
       # Add your view helpers here
     end
   end
