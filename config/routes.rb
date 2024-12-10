@@ -10,6 +10,7 @@ module MyHanamiApp
 
     slice :api, at: "/api" do
       root to: "home.index"
+      get "/books", to: "books.index"
     end
   end
 end
