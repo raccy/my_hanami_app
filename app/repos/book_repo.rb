@@ -10,6 +10,10 @@ module MyHanamiApp
           .per_page(per_page)
           .to_a
       end
+
+      def get(id)
+        books.by_pk(id).one!
+      end
     end
   end
 end
