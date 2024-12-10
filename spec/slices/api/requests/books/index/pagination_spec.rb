@@ -1,4 +1,6 @@
-RSpec.describe "GET /api/books pagination", type: [:request, :db] do
+# frozen_string_literal: true
+
+RSpec.describe "GET /api/books pagination", type: %i[request db] do
   let(:books) { Hanami.app["relations.books"] }
 
   before do

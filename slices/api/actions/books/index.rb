@@ -14,7 +14,6 @@ module API
         def handle(request, response)
           halt 422, {errors: request.params.errors}.to_json unless request.params.valid?
 
-
           books = book_repo.all_by_title(
             page: request.params[:page] || 1,
             per_page: request.params[:per_page] || 5

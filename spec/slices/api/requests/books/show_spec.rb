@@ -1,4 +1,6 @@
-RSpec.describe "GET /api/books/:id", type: [:request, :db] do
+# frozen_string_literal: true
+
+RSpec.describe "GET /api/books/:id", type: %i[request db] do
   let(:books) { Hanami.app["relations.books"] }
 
   context "when a book matches the given ID" do
