@@ -2,23 +2,22 @@
 
 source "https://rubygems.org"
 
-gem "hanami", "~> 2.2.0.beta"
-gem "hanami-assets", "~> 2.2.0.beta"
-gem "hanami-controller", "~> 2.2.0.beta"
-gem "hanami-db", "~> 2.2.0.beta"
-gem "hanami-router", "~> 2.2.0.beta"
-gem "hanami-validations", "~> 2.2.0.beta"
-gem "hanami-view", "~> 2.2.0.beta"
+gem "hanami", "~> 2.2"
+gem "hanami-assets", "~> 2.2"
+gem "hanami-controller", "~> 2.2"
+gem "hanami-db", "~> 2.2"
+gem "hanami-router", "~> 2.2"
+gem "hanami-validations", "~> 2.2"
+gem "hanami-view", "~> 2.2"
 
-gem "dry-types", "~> 1.0", ">= 1.6.1"
-gem "dry-operation", github: "dry-rb/dry-operation"
+gem "dry-types", "~> 1.7"
+gem "dry-operation"
 gem "puma"
 gem "rake"
 gem "sqlite3"
 
 group :development do
-  gem "hanami-webconsole", "~> 2.2.0.beta"
-  gem "guard-puma"
+  gem "hanami-webconsole", "~> 2.2"
 end
 
 group :development, :test do
@@ -26,14 +25,18 @@ group :development, :test do
 end
 
 group :cli, :development do
-  gem "hanami-reloader", "~> 2.2.0.beta"
+  gem "hanami-reloader", "~> 2.2"
 end
 
 group :cli, :development, :test do
-  gem "hanami-rspec", "~> 2.2.0.beta"
+  gem "hanami-rspec", "~> 2.2"
 end
 
 group :test do
+  # Database
+  gem "database_cleaner-sequel"
+
+  # Web integration
   gem "capybara"
   gem "rack-test"
 end
