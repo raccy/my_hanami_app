@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.feature "Showing a book" do
   let(:books) { Hanami.app["relations.books"] }
 

@@ -14,10 +14,10 @@ module MyHanamiApp
 
     private
 
-    def handle_not_found(request, response, exception)
+    def handle_not_found(_request, response, _exception)
       response.status = 404
       response.format = :html
       response.body = "Not found"
     end
-end
+  end
 end
